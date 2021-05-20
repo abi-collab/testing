@@ -16,6 +16,12 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" >
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.21/angular.js"></script>
+    <!--<link rel="stylesheet" href="style.css" />-->
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+    
     <style>
         .nav-link {
     color: black;
@@ -133,35 +139,35 @@
                                         <td class="names">Tolentino</td>
                                         <td class="names">Joseph Rey</td>
                                         <td class="names">Amper</td>
-                                        <td class="names">brgy 58-M patola, San Jose, Cavite City</td>
+                                         <td class="names"><a href="https://www.google.com.ph/maps/place/brgy+58+A+patola,+san+jose,+cavite" target="_blank">Brgy 58A Patola, San Jose, Cavite City</a></td>
                                         <td><input type="checkbox" name="attendance"></td>
                                     </tr>
                                     <tr>
                                         <td class="names">Distor</td>
                                         <td class="names">Allan Carlo</td>
                                         <td class="names">Sulit</td>
-                                         <td class="names">743 Lt. Mario Castro St.brgy 38M, Caridad, Cavite City</td>
+                                        <td class="names"><a href="https://www.google.com.ph/maps/place/743+Lt.+Mario+Castro,+Caridad,+Cavite+City,+Cavite" target="_blank">743 Lt. Mario Castro St.brgy 38M, Caridad, Cavite City</a></td>
                                         <td><input type="checkbox" name="attendance"></td>
                                     </tr>
                                     <tr>
                                         <td class="names">Janabajab</td>
                                         <td class="names">Jhayecyn</td>
                                         <td class="names">Santos</td>
-                                         <td class="names">Lot 2, Blk 3, Vlla Porta Vaga PN, Cavite City</td>
+                                        <td class="names"><a href="https://www.google.com.ph/maps/place/Montenegro Subd.,+brgy+8+,dalahican,+cavite+city" target="_blank">Montenegro Subd., Brgy 8, Dalahican, Cavite City</a></td>
                                         <td><input type="checkbox" name="attendance"></td>
                                     </tr>
                                     <tr>
                                         <td class="names">Dumbledore</td>
                                         <td class="names">Albus</td>
                                         <td class="names">Reyes</td>
-                                         <td class="names">brgy 12, Cavite City</td>
+                                         <td class="names"><a href="https://www.google.com.ph/maps/place/brgy+55+Ampalaya+Cavite+City" target="_blank">Cavite National High School</a></td>
                                         <td><input type="checkbox" name="attendance"></td>
                                     </tr>
                                     <tr>
                                         <td class="names">Cruz</td>
                                         <td class="names">Jhon Loyd</td>
                                         <td class="names">Go</td>
-                                         <td class="names">brgy 50, Cavite City</td>
+                                        <td class="names"><a href="https://www.google.com.ph/maps/place/brgy+50+Cavite+City" target="_blank">brgy 50, Cavite City</a></td>
                                         <td><input type="checkbox" name="attendance"></td>
                                     </tr>
                                    
@@ -409,6 +415,24 @@
     <script src="js/bootstrap-4.0.0.js"></script>
 
     <script src="YM.js"></script>
+    <script>
+        var chart = new Highcharts.Chart({
+  chart: {
+    renderTo: 'container',
+    marginBottom: 80
+  },
+  xAxis: {
+    categories: ['May 2', 'May 9', 'May 16', 'May 23'],
+    labels: {
+      rotation: 90
+    }
+  },
+
+  series: [{
+    data: [4, 2, 3, 5]        
+  }]
+});
+    </script>
 
 </body>
 
