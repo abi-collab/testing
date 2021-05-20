@@ -1,1 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YmAttendance</title>
+   
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" >
+    <style>
+        .nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: black;
+    background-color: deepskyblue;
+    box-shadow: grey 1px 2px 25px 2px;
+    border-radius: 10px;
+}
+
+.names {
+    text-align: left;
+}
+
+#logo {
+    height: 50px;
+}
+
+#addBtn:hover {
+    cursor: pointer;
+}
+    </style>
+   
+
+
+
+</head>
+
+<body id="bodys">
+
+    <!------------------------ header here ------------------------>
+
+    <div class="jumbotron jumbotron-fluid text-center bg-dark" style="color:white;" >
+        <h1 class="display-4">Shepherd</h1>
+        <hr>
+        <sup class="lead" style="text-shadow: 0px 1px grey;">A simple way to monitor the Spiritual Growth of our future young leaders</sup>
+
+    </div>
+
+    <div class="container text-center">
+         <h1 class="display-4">Young Men Organization</h1>
+              
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- tabs -->
+
+    <div class="container">
+        <ul id="wards" class="nav nav-tabs d-flex justify-content-center" role="tablist">
+            <li class="nav-item"> <a class="nav-link active" href="#kawit-content" id="kawit" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Attendance</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#noveleta-content" role="tab" id="noveleta" data-toggle="tab" aria-controls="hats">Log Records</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#cav1-content" role="tab" id="cav1st" data-toggle="tab" aria-controls="hats">Activity Rate</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#cav2-content" role="tab" id="cav2nd" data-toggle="tab" aria-controls="hats">Announcements/Post</a> </li>
+            
+        </ul>
+
+        <!-- Content Panel -->
+        <div id="wardContent" class="tab-content">
+            <div role="tabpanel" class="tab-pane fade show active text-center" id="kawit-content" aria-labelledby="kawit">
+                <br>
+                <br>
+                <h1 class="display-4">Attendance</h1>
+                <sup class="text-muted"><b>Directions</b> : Check the aligned boxes next to the name is the person is present on a certain church meeting or activity.</sup>
+
+                <div class="container" align="left">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-6">
+                         Please Pick A Date
+                         <br>
+                         <input type="date"/>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <div class="container">
+                    <br>
+                    <br>
+                    <br>
+
+
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <table width="100%;" border="1" bordercolor="white">
+                                <tbody>
+                                    <tr style="text-align: left;">
+                                        <td>
+                                            <h6 class="text-muted">Lastname</h6>
+                                        </td>
+                                        <td>
+                                            <h6 class="text-muted">Firstname</h6>
+                                        </td>
+                                        <td>
+                                            <h6 class="text-muted">Middlename</h6>
+                                        </td>
+                                        <td style="text-align: center;">X</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <hr>
+                                        </td>
+                                        <td>
+                                            <hr>
+                                        </td>
+                                        <td>
+                                            <hr>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="names">Tolentino</td>
+                                        <td class="names">Joseph Rey</td>
+                                        <td class="names">Amper</td>
+                                        <td><input type="checkbox" name="attendance"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="names">Distor</td>
+                                        <td class="names">Allan Carlo</td>
+                                        <td class="names">Sulit</td>
+                                        <td><input type="checkbox" name="attendance"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="names">Janabajab</td>
+                                        <td class="names">Jhayecyn</td>
+                                        <td class="names">Santos</td>
+                                        <td><input type="checkbox" name="attendance"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="names">Dumbledore</td>
+                                        <td class="names">Albus</td>
+                                        <td class="names">Reyes</td>
+                                        <td><input type="checkbox" name="attendance"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="names">Cruz</td>
+                                        <td class="names">Jhon Loyd</td>
+                                        <td class="names">Go</td>
+                                        <td><input type="checkbox" name="attendance"></td>
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-2"></div>
+
+
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8"><img src="add.png" id="addBtn" align="left" height="50" alt="" /></div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-xl-2"></div>
+                    <div class="col-xl-8">
+
+                        <button type="button" class="btn btn-success text-center" id="submitReport" style="margin:0px auto 0px auto;width: 100%;" onclick="a()">Submit Report</button>
+
+                    </div>
+                    <div class="col-xl-2"></div>
+                </div>
+
+
+
+            </div>
+            <div role="tabpanel" class="tab-pane fade text-center" id="noveleta-content" aria-labelledby="noveleta">
+                <br>
+                <br>
+                <h1 class="display-4">Log Records</h1>
+
+                <br>
+                <br>
+
+                <div style="border:solid grey 1px;border-radius: 15px;text-align: left;padding-left: 30%;padding-top: 20px; margin:20px;">
+                    <b>May 2,2021</b>
+                    <br>
+                    <br>
+                    <ol>
+                        <li>Cruz, John Loyd Go</li>
+                        <li>Tolentino, Joseph Rey Amper</li>
+                        <li>Distor, Allan Carlo Sulit</li>
+                        <li>Dumbledore, Albus Reyes</li>
+                      
+                    </ol>
+                </div>
+                <div style="border:solid grey 1px;border-radius: 15px;text-align: left;padding-left: 30%;padding-top: 20px; margin:20px;">
+                    <b>May 9,2021</b>
+                    <br>
+                    <br>
+                    <ol>
+                        <li>Cruz, John Loyd Go</li>
+                       <li>Dumbledore, Albus Reyes</li>
+
+                    </ol>
+                </div>
+                <div style="border:solid grey 1px;border-radius: 15px;text-align: left;padding-left: 30%;padding-top: 20px; margin:20px;">
+                    <b>May 16,2021</b>
+                    <br>
+                    <br>
+                    <ol>
+                        <li>Tolentino, Joseph Rey Amper</li>
+                        <li>Distor, Allan Carlo Sulit</li>
+                        <li>Cruz, John Loyd Go</li>
+                    </ol>
+                </div>
+                <div style="border:solid grey 1px;border-radius: 15px;text-align: left;padding-left: 30%;padding-top: 20px; margin:20px;">
+                    <b>May 23,2021</b>
+                    <br>
+                    <br>
+                    <ol>
+                        <li>Dumbledore, Albus Reyes</li>
+                        <li>Janabajab, Jhayecyn Santos</li>
+                        <li>Distor, Allan Carlo Sulit</li>
+                        <li>Cruz, John Loyd Go</li>
+                        <li>Tolentino, Joseph Rey Amper</li>
+                    </ol>
+                </div>
+
+
+
+                
+            </div>
+            <div role="tabpanel" class="tab-pane fade text-center" id="cav1-content" aria-labelledby="cav1st">
+                <br>
+                <br>
+                <h1 class="display-4">Activity Rate</h1>
+                <br>
+                <br>
+                <div class="row">
+                    
+                    <div class="col-lg-6">
+                        <div style="text-align: left;padding-left: 30%;">
+                            <ul style="list-style:none;">
+                                <li><h5>Dumbledore, Albus Reyes</h5></li>
+                                <li><h5>Janabajab, Jhayecyn Santos</h5></li>
+                                <li><h5>Distor, Allan Carlo Sulit</h5></li>
+                                <li><h5>Cruz, John Loyd Go</h5></li>
+                                <li><h5>Tolentino, Joseph Rey Amper</h5></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                         <div style="text-align: left">
+                            <ul style="list-style:none;">
+                                <li style="color:green"><h5>80 %</h5></li>
+                                <li style="color:orange"><h5>50 %</h5></li>
+                                <li style="color:green"><h5>91 %</h5></li>
+                                <li style="color:orange"><h5>75 %</h5></li>
+                                <li style="color:red"><h5>40 %</h5></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+             
+            </div>
+            <div role="tabpanel" class="tab-pane fade text-center" id="cav2-content" aria-labelledby="cav2nd">
+                <br>
+                <br>
+                <h1 class="display-4">Annoucements/Post</h1>
+                <br>
+                <br>
+                <br>
+                 <div class="row">
+                    <div class="col-lg-3"> </div>
+                    
+                    <div class="col-lg-6">
+                        <div style="border:solid grey 1px;border-radius: 15px;text-align: left;padding:30px;">
+                            <h4>Posted by: Reynold(Young Men President)</h4>
+                            <br>
+                            <h5><i class="text-muted">What:</i>Young Men Rescue Training Activity</h5>
+                             <h5><i class="text-muted">When:</i> July 12, 2022 @ 10am</h5>
+                              <h5> <i class="text-muted">Where:</i> Villa Imelda Resort, Silang, Cavite</h5>
+                              <h5><i class="text-muted">Note:</i> Bring Your Pet, Bring Entrance Fee(Php 100) </h5>
+                              <br>
+                              <br>
+                              <button style="border-radius: 10px;">Write Comment</button>
+                              <button style="border-radius: 10px;">Like</button>
+                              <button style="border-radius: 10px;">Copy Link</button>
+                              <br>
+                              <br>
+                              <h6>Can Attend : <b style="color:green">5 </b><br></h6>
+                              <h6>Cannot Attend: <b style="color:red">3</b></h6>
+                              <br>
+                              <br>
+                               <div align="left">
+                                    Comments 1<br><br>
+                                    <b>Ron</b> - Di po ako makakapunta, may importanteng lakad po ako that day.
+
+                                </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                         <div style="border:solid grey 1px;border-radius: 15px;text-align: left;padding:30px;">
+                            <h4>Posted by: Remy(Young Women President)</h4>
+                            <br>
+                            <h5><i class="text-muted">What:</i>Young Women Cooking Activity</h5>
+                             <h5><i class="text-muted">When:</i> June 1, 2022 @ 9am</h5>
+                              <h5> <i class="text-muted">Where:</i> Villa Ernesto Camp Site, Naic, Cavite</h5>
+                              <h5><i class="text-muted">Note:</i> Invite Your friends </h5>
+                              <br>
+                              <br>
+                              <button style="border-radius: 10px;">Write Comment</button>
+                              <button style="border-radius: 10px;">Like</button>
+                              <button style="border-radius: 10px;">Copy Link</button>
+                              <br>
+                              <br>
+                              <h6>Can Attend : <b style="color:green">8</b><br></h6>
+                              <h6>Cannot Attend: <b style="color:red">1</b></h6>
+                              <br>
+                              <br>
+                               <div align="left">
+                                    Comments 0<br><br>
+
+                                </div>
+                        </div>
+                        <br>
+                       
+                    </div>
+                    
+                    <div class="col-lg-3"></div>
+
+           
+            </div>
+           
+        </div>
+
+    </div>
+
+
+   
+    <br>
+
+    <br>
+    <br>
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+
+    <script src="YM.js"></script>
+
+</body>
+
+</html>
